@@ -56,14 +56,12 @@ function App() {
     console.log(user,computer);
     if(user.name === computer.name){
       return "TIE"
-    }else if(
-      user.name ==='Rock' && computer.name === 'Scissors' ||
-      user.name ==='Scissors' && computer.name === 'Paper' ||
-      user.name ==='Paper' && computer.name === 'Rock'
-    ){
-      return "WIN"
-    }else{
-      return "LOSE"
+    }else if(user.name === "Rock"){
+      return computer.name === "Scissors" ? "WIN" : "LOSE"
+    }else if(user.name === "Scissors"){
+      return computer.name === "Paper" ? "WIN" : "LOSE"
+    }else if(user.name === "Paper"){
+      return computer.name === "Rock" ? "WIN" : "LOSE"
     }
   }
 
