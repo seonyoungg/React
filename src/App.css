@@ -8,7 +8,8 @@ img{
   object-fit: contain;
 }
 
-.btn-group{
+/*함수컴포넌트 CSS*/
+/* .btn-group{
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -32,4 +33,72 @@ img{
 
 .btn-group button:hover{
   background-color: rgb(218, 221, 79);
+} */
+
+.game-wrap{
+  width: 50vw;
+  height: 500px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.game-btn-wrap{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.game-btn-wrap button{
+  padding: 0.5rem 1rem;
+
+  color: rgb(255, 115, 0);
+  background-color: #fff;
+  border: 1px solid rgb(255, 115, 0);
+  border-radius: 1rem;
+
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.game-btn-wrap button:hover{
+  color:#fff;
+  background-color:  rgb(255, 115, 0);
+  border: 1px solid rgb(255, 115, 0);
+}
+
+.game-box{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.game-box-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  padding: 3rem;
+  margin-bottom: 1rem;
+  width: 300px;
+  border-radius: 2rem;
+  border: 1px solid lightgray;
+}
+
+.game-box-item img{
+  width: 100%;
+  height: 150px;
+}
+
+.state-text{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+
+  width: 100%;
+
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
 }
